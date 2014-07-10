@@ -25,8 +25,8 @@
     self.navigationController = navigationController;
     
     // For Parse
-    [Parse setApplicationId:@"KfUkRg2MR54ZmVFKjjdxpb5mbmox1Sb2WRsK1TH4"
-                  clientKey:@"my0EkDYEgUQoPBiJxpVNoPv8SdFENg5bVUj6lAVa"];
+    [Parse setApplicationId:@"EeuWt6TgI0TJ3jKdAIsBlai2c25aVpTykppHib9h"
+                  clientKey:@"CF60AtDj9slNO9uRZ8n3P407VZM22DWSguOpGr4u"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     [PFFacebookUtils initializeFacebook];
