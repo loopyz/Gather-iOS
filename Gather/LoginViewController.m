@@ -152,7 +152,7 @@
 
 - (void)addLogo
 {
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 230.5)/2 - 13, 10, 230.5, 180.5)];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 230.5)/2 - 15, 30, 252, 109.5)];
     imgView.image = [UIImage imageNamed:@"logo.png"];
     [self.view addSubview:imgView];
 }
