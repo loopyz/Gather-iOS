@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UITabBarController
+
+@property (strong, nonatomic) UIColor *bgColor;
 
 @end

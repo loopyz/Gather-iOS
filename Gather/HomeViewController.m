@@ -10,6 +10,7 @@
 
 @interface HomeViewController ()
 
+
 @end
 
 @implementation HomeViewController
@@ -19,9 +20,89 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        self.bgColor = [UIColor colorWithRed:251/255.0f green:251/255.0f blue:251/255.0f alpha:1.0f];
+        
+        // Custom initialization
+        [self changeBG];
+        [self initNavBar];
+        
+        //tab bars
+        
+        
     }
     return self;
 }
+
+- (void)initNavBar
+{
+    // Background image for navbar
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbg.png"]
+                                       forBarMetrics: UIBarMetricsDefault];
+    
+    // Left bar button item.
+    UIBarButtonItem *lbb =  [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"person.png"]
+                                                             style:UIBarButtonItemStylePlain
+                                                            target:self
+                                                            action:@selector(launchSettingsView)];
+    lbb.tintColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    self.navigationItem.leftBarButtonItem = lbb;
+    
+    // Logo in the center of navigation bar
+    UIView *logoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 64.5, 50.5)];
+    UIImageView *titleImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"navlogo.png"]];
+    titleImageView.frame = CGRectMake(0, 0, titleImageView.frame.size.width/2, titleImageView.frame.size.height/2);
+    [logoView addSubview:titleImageView];
+    self.navigationItem.titleView = logoView;
+    
+    
+    // Right bar button item to launch the categories selection screen.
+    UIBarButtonItem *rbb = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"plus.png"]
+                                                            style:UIBarButtonItemStylePlain
+                                                           target:self
+                                                           action:@selector(launchAddGameView)];
+    
+    rbb.tintColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    self.navigationItem.rightBarButtonItem = rbb;
+    
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    self.navigationController.navigationBar.translucent = NO;
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+}
+
+- (void)assignTabColors
+{
+    switch (self.selectedIndex) {
+        case 0: {
+            UIColor * color = [UIColor colorWithRed:23/255.0f green:41/255.0f blue:166/255.0f alpha:1.0f];
+            self.view.tintColor = color;
+            break;
+        }
+            
+        default:
+            break;
+    }
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    [self assignTabColors];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self assignTabColors];
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+- (void)changeBG
+{
+    self.view.backgroundColor = self.bgColor;
+}
+
 
 - (void)viewDidLoad
 {
@@ -35,15 +116,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Action Handlers
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)launchSettingsView
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return;
 }
-*/
+
 
 @end
