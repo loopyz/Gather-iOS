@@ -11,13 +11,12 @@
 
 #import <Parse/Parse.h>
 
-#import "HomeViewController.h"
-
 @interface LoginViewController ()
 
 @end
 
 @implementation LoginViewController
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -55,7 +54,7 @@
 
 - (void)buttonTouched:(id)sender
 {
-//    NSArray *permissionsArray = @[@"user_about_me", @"user_friends"];
+//    NSArray *permissionsArray = @[@"public_profile", @"user_friends", @"email"];
 //    // login PFUser using facebook
 //    [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
 //        if (!user) {

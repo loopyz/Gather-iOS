@@ -41,12 +41,15 @@
 		8D36D2F2196F593300EEA83E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D36D2F1196F593300EEA83E /* OpenGLES.framework */; };
 		8D36D2F4196F593800EEA83E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D36D2F3196F593800EEA83E /* SystemConfiguration.framework */; };
 		8D36D2F6196F593D00EEA83E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D36D2F5196F593D00EEA83E /* CoreData.framework */; };
-		8D36D2F9196F59CA00EEA83E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D2F8196F59CA00EEA83E /* HomeViewController.m */; };
 		8D36D300196F5D5D00EEA83E /* email-login.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D36D2FB196F5D5D00EEA83E /* email-login.png */; };
 		8D36D301196F5D5D00EEA83E /* email-register.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D36D2FC196F5D5D00EEA83E /* email-register.png */; };
 		8D36D302196F5D5D00EEA83E /* facebook-login.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D36D2FD196F5D5D00EEA83E /* facebook-login.png */; };
 		8D36D303196F5D5D00EEA83E /* login-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D36D2FE196F5D5D00EEA83E /* login-bg.png */; };
 		8D36D304196F5D5D00EEA83E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D36D2FF196F5D5D00EEA83E /* logo.png */; };
+		8D8FEDCA196F6602007B71D0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8FEDC9196F6602007B71D0 /* HomeViewController.m */; };
+		8D8FEDCC196F74F6007B71D0 /* navbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FEDCB196F74F6007B71D0 /* navbg.png */; };
+		8D8FEDCE196F74FC007B71D0 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FEDCD196F74FC007B71D0 /* person.png */; };
+		8D8FEDD1196F7562007B71D0 /* GatherInterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8FEDD0196F7562007B71D0 /* GatherInterestsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,12 +103,16 @@
 		8D36D2F3196F593800EEA83E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D36D2F5196F593D00EEA83E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8D36D2F7196F59CA00EEA83E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		8D36D2F8196F59CA00EEA83E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		8D36D2FB196F5D5D00EEA83E /* email-login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-login.png"; sourceTree = "<group>"; };
 		8D36D2FC196F5D5D00EEA83E /* email-register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-register.png"; sourceTree = "<group>"; };
 		8D36D2FD196F5D5D00EEA83E /* facebook-login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-login.png"; sourceTree = "<group>"; };
 		8D36D2FE196F5D5D00EEA83E /* login-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-bg.png"; sourceTree = "<group>"; };
 		8D36D2FF196F5D5D00EEA83E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		8D8FEDC9196F6602007B71D0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8D8FEDCB196F74F6007B71D0 /* navbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbg.png; sourceTree = "<group>"; };
+		8D8FEDCD196F74FC007B71D0 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		8D8FEDCF196F7562007B71D0 /* GatherInterestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GatherInterestsViewController.h; sourceTree = "<group>"; };
+		8D8FEDD0196F7562007B71D0 /* GatherInterestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatherInterestsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +222,9 @@
 				8D36D2CE196F587300EEA83E /* LoginViewController.h */,
 				8D36D2CF196F587300EEA83E /* LoginViewController.m */,
 				8D36D2F7196F59CA00EEA83E /* HomeViewController.h */,
-				8D36D2F8196F59CA00EEA83E /* HomeViewController.m */,
+				8D8FEDC9196F6602007B71D0 /* HomeViewController.m */,
+				8D8FEDCF196F7562007B71D0 /* GatherInterestsViewController.h */,
+				8D8FEDD0196F7562007B71D0 /* GatherInterestsViewController.m */,
 			);
 			path = Gather;
 			sourceTree = "<group>";
@@ -252,6 +261,8 @@
 		8D36D2FA196F5D5D00EEA83E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8D8FEDCD196F74FC007B71D0 /* person.png */,
+				8D8FEDCB196F74F6007B71D0 /* navbg.png */,
 				8D36D2FB196F5D5D00EEA83E /* email-login.png */,
 				8D36D2FC196F5D5D00EEA83E /* email-register.png */,
 				8D36D2FD196F5D5D00EEA83E /* facebook-login.png */,
@@ -339,9 +350,11 @@
 			files = (
 				8D36D302196F5D5D00EEA83E /* facebook-login.png in Resources */,
 				8D36D2A6196F57F900EEA83E /* InfoPlist.strings in Resources */,
+				8D8FEDCC196F74F6007B71D0 /* navbg.png in Resources */,
 				8D36D303196F5D5D00EEA83E /* login-bg.png in Resources */,
 				8D36D2AE196F57F900EEA83E /* Images.xcassets in Resources */,
 				8D36D304196F5D5D00EEA83E /* logo.png in Resources */,
+				8D8FEDCE196F74FC007B71D0 /* person.png in Resources */,
 				8D36D300196F5D5D00EEA83E /* email-login.png in Resources */,
 				8D36D301196F5D5D00EEA83E /* email-register.png in Resources */,
 			);
@@ -364,8 +377,9 @@
 			files = (
 				8D36D2AC196F57F900EEA83E /* TestAppDelegate.m in Sources */,
 				8D36D2A8196F57F900EEA83E /* main.m in Sources */,
+				8D8FEDD1196F7562007B71D0 /* GatherInterestsViewController.m in Sources */,
 				8D36D2D0196F587300EEA83E /* LoginViewController.m in Sources */,
-				8D36D2F9196F59CA00EEA83E /* HomeViewController.m in Sources */,
+				8D8FEDCA196F6602007B71D0 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +586,7 @@
 				8D36D2C6196F57F900EEA83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D36D2C7196F57F900EEA83E /* Build configuration list for PBXNativeTarget "GatherTests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +595,7 @@
 				8D36D2C9196F57F900EEA83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
